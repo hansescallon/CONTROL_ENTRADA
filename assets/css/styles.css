@@ -1,0 +1,9 @@
+.personalCardheader {
+  background: #0707db;
+  color: white;
+}
+
+input,
+select {
+  margin-bottom: 15px;
+}

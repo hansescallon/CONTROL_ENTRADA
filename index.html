@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="card mb-3" style="max-width: 940px">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR96QRecjnP69nLrrJPF6YNVVsyYp93vh996Q&usqp=CAU"
+            alt="Trendy Pants and Shoes"
+            class="img-fluid rounded-start"
+            style="width: 150%; height: 100%"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-header personalCardheader">
+            <h4 class="card-title">Control de Ingreso</h4>
+          </div>
+          <div class="card-body">
+            <hr />
+
+            <div class="row">
+              <div class="col">
+                <!-- Name input -->
+                <div class="form-outline">
+                  <input type="text" id="nombres" class="form-control" />
+                  <label class="form-label" for="form8Example1">Nombres</label>
+                </div>
+              </div>
+              <div class="col">
+                <!-- Email input -->
+                <div class="form-outline">
+                  <input type="text" id="apellidos" class="form-control" />
+                  <label class="form-label" for="form8Example2"
+                    >Apellidos</label
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <!-- Name input -->
+
+                <select
+                  class="mdb-select form-control"
+                  id="sidentificacion"
+                  onchange="change_handler();"
+                >
+                  <option value="" disabled selected>
+                    Tipo de Identificacion
+                  </option>
+                  <option value="op1">Cedula</option>
+                  <option value="op2">Cedula Extranjeria</option>
+                  <option value="op3">Pasaporte</option>
+                </select>
+              </div>
+              <div class="col">
+                <!-- Name input -->
+                <div class="form-outline">
+                  <input
+                    type="number"
+                    id="nidentificacion"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="form8Example4"
+                    >Nº. Identificacion</label
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <!-- Name input -->
+
+                <select
+                  class="mdb-select form-control"
+                  id="stiposangre"
+                  onchange="change_handler();"
+                >
+                  <option value="" disabled selected>Tipo de Sangre</option>
+                  <option value="op1">A positivo (A +)</option>
+                  <option value="op2">A negativo (A-)</option>
+                  <option value="op3">B positivo (B +)</option>
+                  <option value="op4">B negativo (B-)</option>
+                  <option value="op5">A negativo (A-)</option>
+                  <option value="op6">B positivo (B +)</option>
+                  <option value="op7">AB positivo (AB+)</option>
+                  <option value="op8">AB negativo (AB-)</option>
+                  <option value="op9">O positivo (O+)</option>
+                  <option value="op10">O negativo (O-)</option>
+                </select>
+              </div>
+
+              <div class="col">
+                <!-- Name input -->
+
+                <select
+                  class="mdb-select form-control"
+                  id="sgenero"
+                  onchange="change_handler();"
+                >
+                  <option value="" disabled selected>Genero</option>
+                  <option value="op1">Masculino</option>
+                  <option value="op2">Femenino</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col">
+                <!-- Name input -->
+                <div class="form-outline">
+                  <input type="number" id="edad" class="form-control" />
+                  <label class="form-label" for="form8Example3">Edad</label>
+                </div>
+              </div>
+              <div class="col">
+                <!-- Name input -->
+                <div class="form-outline">
+                  <input type="number" id="celular" class="form-control" />
+                  <label class="form-label" for="form8Example4">Celular</label>
+                </div>
+              </div>
+              <div class="col">
+                <!-- Email input -->
+                <div class="form-outline">
+                  <input
+                    type="number"
+                    id="celularemergencia"
+                    class="form-control"
+                  />
+                  <label class="form-label" for="form8Example5"
+                    >Celular de Emergencia</label
+                  >
+                </div>
+              </div>
+            </div>
+            <hr />
+            <button type="button" class="btn btn-primary btn-block mb-3">
+              Registrar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
+    ></script>
+  </body>
+</html>
