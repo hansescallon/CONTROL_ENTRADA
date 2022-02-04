@@ -63,11 +63,7 @@
               <div class="col">
                 <!-- Name input -->
 
-                <select
-                  class="mdb-select form-control"
-                  id="sidentificacion"
-                  onchange="change_handler();"
-                >
+                <select class="mdb-select form-control" id="sidentificacion">
                   <option value="" disabled selected>
                     Tipo de Identificacion
                   </option>
@@ -94,11 +90,7 @@
               <div class="col">
                 <!-- Name input -->
 
-                <select
-                  class="mdb-select form-control"
-                  id="stiposangre"
-                  onchange="change_handler();"
-                >
+                <select class="mdb-select form-control" id="stiposangre">
                   <option value="" disabled selected>Tipo de Sangre</option>
                   <option value="op1">A positivo (A +)</option>
                   <option value="op2">A negativo (A-)</option>
@@ -116,14 +108,10 @@
               <div class="col">
                 <!-- Name input -->
 
-                <select
-                  class="mdb-select form-control"
-                  id="sgenero"
-                  onchange="change_handler();"
-                >
+                <select class="mdb-select form-control" id="sgenero">
                   <option value="" disabled selected>Genero</option>
-                  <option value="op1">Masculino</option>
-                  <option value="op2">Femenino</option>
+                  <option value="M">Masculino</option>
+                  <option value="F">Femenino</option>
                 </select>
               </div>
             </div>
@@ -175,5 +163,6 @@
       src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"
     ></script>
     <script type="text/javascript" src="assets/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </body>
 </html>
